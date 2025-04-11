@@ -23,5 +23,5 @@ app.get("/checkauth", restrictToLoggedinUserOnly);
 app.use("/user", userRoute);
 app.use("/",restrictToLoggedinUserOnlyMiddleWare, staticRouter)
 
-app.listen(port,'0.0.0.0',() => console.log(`Server Started at PORT:${port}`));
+app.listen(port,'0.0.0.0',() => console.log(`Server Started on PORT:${port}`));
  
