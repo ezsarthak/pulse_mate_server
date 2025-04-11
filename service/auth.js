@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 
 
 
-const secret = process.env.secret;
+const secret = process.env.SECRET;
 
 function setUser(user) {
   return jwt.sign(

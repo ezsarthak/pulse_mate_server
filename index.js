@@ -7,8 +7,8 @@ const staticRouter = require("./routes/static");
 
 
 const app = express();
-const port = process.env.port || 7000;
-const db = process.env.db;
+const port = process.env.PORT || 7000;
+const db = process.env.DB;
 
 
 connectToMongoDB(db).then(() =>
