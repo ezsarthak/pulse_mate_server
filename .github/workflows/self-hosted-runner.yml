@@ -23,4 +23,4 @@ jobs:
 
     - name: Deploy
       run:
-          cd ~/actions-runner2/_work/pulse_mate_server/pulse_mate_server && git pull && npm install && pm2 restart index.js
+          cd ~/actions-runner2/_work/pulse_mate_server/pulse_mate_server && git pull && npm install && pm2 restart index.js && echo "DB=$DB" >> .env && echo "SECRET=$SECRET" >> .env && pm2 restart index.js 
